@@ -1,9 +1,12 @@
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
-grails.project.target.level = 1.6
+grails.project.target.level = 1.7
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
-
+grails.project.dependency.distribution = {
+	localRepository = "/path/to/my/local"
+	remoteRepository(id: "archiva", url: "http://engineering.esyncdirect.co.uk/archiva/repository/internal/")
+}
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
