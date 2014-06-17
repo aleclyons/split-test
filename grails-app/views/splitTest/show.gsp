@@ -78,7 +78,7 @@
 
             <tr class="prop">
                 <td valign="top" class="name">Status</td>
-                <td valign="top" class="value">${splitTestInstance.displayStatus()}</td>
+                <td valign="top" class="value">${raw(splitTestInstance.displayStatus())}</td>
             </tr>
 
             <tr class="prop">

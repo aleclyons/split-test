@@ -54,7 +54,7 @@
                 <g:each in="${splitTestInstanceList}" status="i" var="splitTestInstance">
                     <tr class="${(i % 2) == 0 ? 'odd' : 'even'} ${splitTestInstance.isLive() ? 'active' : ''}">
                         <td>${fieldValue(bean: splitTestInstance, field: "name")}</td>
-                        <td>${splitTestInstance?.displayStatus()}</td>
+                        <td>${raw(splitTestInstance?.displayStatus())}</td>
                         <td><g:formatDate date="${splitTestInstance.dateStart}" format="yyyy-MM-dd HH:mm z"/></td>
                         <td><g:formatDate date="${splitTestInstance.dateFinish}" format="yyyy-MM-dd HH:mm z"/></td>
                         <td><g:formatDate date="${splitTestInstance.dateCreated}" format="yyyy-MM-dd HH:mm z"/></td>
