@@ -14,7 +14,7 @@ class SplitTestTagLib {
                 SplitTestVariantHit splitTestVariantHit = splitTestService.loadSplitTestVariantHit(splitTestName)
                 if (splitTestVariantHit != null) {
                     println "Rendering contents of split test variant for ${splitTest?.name}."
-                    out << splitTestVariantHit.splitTestVariant.code.decodeHTML()
+                    out << render text: splitTestVariantHit.splitTestVariant.code
                 } else {
                     println "Split test hit is null. Rendering default content."
                     out << body()
