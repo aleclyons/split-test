@@ -1,6 +1,6 @@
 package com.ono.ab
 
-class SplitTestVariant {
+class SplitTestVariant implements Serializable {
 
     static belongsTo = [ splitTest: SplitTest ]
     static hasMany = [ splitTestVariantHits: SplitTestVariantHit ]

@@ -1,6 +1,6 @@
 package com.ono.ab
 
-class SplitTestVariantHit {
+class SplitTestVariantHit implements Variable {
 
     static belongsTo = [ splitTestVariant: SplitTestVariant ]
 
