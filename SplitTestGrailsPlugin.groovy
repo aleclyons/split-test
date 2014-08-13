@@ -1,6 +1,6 @@
 class SplitTestGrailsPlugin {
     // the plugin version
-    def version = "0.4.2"
+    def version = "0.4.3"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.0 > *"
 	def groupId='com.theformationscompany.splittest'
