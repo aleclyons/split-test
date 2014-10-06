@@ -1,4 +1,4 @@
-<plugin name='split-test' version='0.4.3' grailsVersion='2.0 &gt; *'>
+<plugin name='split-test' version='0.4.5' grailsVersion='2.0 &gt; *'>
   <author>Eric Berry</author>
   <authorEmail>cavneb@gmail.com</authorEmail>
   <title>Split Test Plugin</title>
